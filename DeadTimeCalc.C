@@ -10,6 +10,7 @@ void DeadTimeCalc() {
 	gStyle->SetOptTitle(0);
 	
 	TFile* f = new TFile("~/godaq_rootfiles/analysis_v2.10.0/run9.root", "read");
+	//TFile* f = new TFile("~/godaq_rootfiles/analysis_v2.10.0/run78.root", "read");
 	TTree* t = (TTree*) f->Get("tree");
 	
         TTreeReader reader(t);
